@@ -19,11 +19,11 @@ The agent has four discrete actions to choose from:
 * 2 - Left
 * 3 - Right
 
-### Installation
+### Getting started
 
 In order to run this project you will need Python 3.6. 
 
-Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -33,12 +33,10 @@ Download the environment from one of the links below.  You need only select the 
 
 (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
+2. Place the file in the repository folder, and unzip (or decompress) the file.
 
-### Run
-In the terminal window, navigate to the base directory of the project and run the following command:
+3. Open the Navigation.ipynb notebook and follow instructions there.
 
-```shell
-$ jupyter notebook
-```
+### Dependencies
 
-This will open the Jupyter Notebook software and notebook in your browser which you can use to explore and reproduce the experiments that have been run. 
+For more information on the project dependencies please have a look at the Udacity repository [dependencies section](https://github.com/udacity/deep-reinforcement-learning#dependencies).
