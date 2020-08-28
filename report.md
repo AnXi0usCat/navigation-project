@@ -45,8 +45,11 @@ LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 ```
 
-
 ### Results
+
+
+
+![performance](performance.png)
 
 ### Future work
 
