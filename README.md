@@ -4,7 +4,7 @@ This project is a submission for the Navigation project with the Udacity Deep Re
 
 ![bananas](bananas.gif)
 
-In this project we use Deep Q-Learning(DQN) to train an agent to collect bananas within a large 3d world. The project environemnt is porvided by Udacity and is similar but not exactly the same as [Banana Collector](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector) environment on the Unity ML-Agents GitHub page. 
+In this project I use Deep Q-Learning(DQN) to train an agent to collect bananas within a large 3d world. The project environment is provided by Udacity and is similar but not exactly the same as [Banana Collector](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector) environment on the Unity ML-Agents GitHub page. 
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. The goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
