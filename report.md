@@ -16,9 +16,35 @@ To solved this project I used a Deep Q-Network, which is a combination of a [Q-L
 
 The code used in this project is a slightly modified version of the [Lunar Lander](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn) tutorial provided by the Udacity oin their Deep RL nano degree, and consists out of the following:
 
-
+* Navigation.ipynb: entry point for the project, contains the main training loop
+* model.py: contains the neural network which is used to select actions based on the current state
+* dqn_agent.py: contains the Agent implementation and ReplayBuffer to store the last 100 experiences for learning.
 
 ### Model Architecture
+
+I used a simple feed forward neural network with 1 hidden layer and RELU activation function after after the input and the hidden layer.
+
+The [MSE](https://en.wikipedia.org/wiki/Mean_squared_error) was used to calculate the loss with [ADAM](https://arxiv.org/pdf/1412.6980.pdf) used as an optimizer.
+
+Model Layers are as following:
+```
+input layer:  in 37  out 64
+hidden layer: in 64  out 128
+output layer: in 128 out 4 
+
+```
+
+Agent hyper-parameters:
+
+```
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 64         # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR = 5e-4               # learning rate 
+UPDATE_EVERY = 4        # how often to update the network
+```
+
 
 ### Results
 
