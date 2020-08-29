@@ -22,9 +22,9 @@ The code used in this project is a slightly modified version of the [Lunar Lande
 
 ### Model Architecture
 
-I used a simple feed forward neural network with 1 hidden layer and RELU activation function after after the input and the hidden layer.
+I used a simple feed forward neural network with 1 hidden layer and RELU activation function after after the input and the hidden layers.
 
-The [MSE](https://en.wikipedia.org/wiki/Mean_squared_error) was used to calculate the loss with [ADAM](https://arxiv.org/pdf/1412.6980.pdf) used as an optimizer.
+The [MSE](https://en.wikipedia.org/wiki/Mean_squared_error) was used as the loss function with [ADAM](https://arxiv.org/pdf/1412.6980.pdf) used as the optimizer.
 
 Model Layers are as following:
 ```
@@ -47,6 +47,13 @@ UPDATE_EVERY = 4        # how often to update the network
 
 ### Results
 
+The most basic DQN was used for this task and it ended up doing pretty well, so I think any additional modifications would be an overkill for this exercise.
+
+I trained the agent for 2000 episodes in total while checking the average score every 100 episodes and saving the model parameters if the score had increased over the previous iteration.
+
+I tired different values for the number of steps per episode. The values from 100 to 500 were used during training. In the final run I limited the episode to 300 steps which yielded the best results.
+
+The task was officially solved after 600 episodes with the score of 13.59 and the maximum score was achieved 1700 episodes with 15.56 . 
 
 
 ![performance](performance.png)
